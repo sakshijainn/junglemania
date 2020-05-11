@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>A Beautiful Jungle</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+	<script src="main.js"></script>
+
+	<div class="app">
+		<div class="welcome">
+			<h1>🌴Welcome to the Jungle🌴</h1>
+			<p>Click on Animals to learn more ❤️ </p>
+		</div>
+
+		<div class="animal-squad">
+			<div class="tab animal" onclick="showAnimalDetail('wolf')">🐺</div>
+			<div class="tab animal" onclick="showAnimalDetail('lion')">🦁</div>
+			<div class="tab animal" onclick="showAnimalDetail('elephant')">🐘</div>
+			<div class="tab animal" onclick="showAnimalDetail('crocodile')">🐊</div>
+		</div>
+
+		<div class="check">
+			<button class="btn" onclick="playJungleMusic()">Background Jungle Music </button>
+			<button class="btn" onclick="pauseJungleMusic()">Pause Jungle Music </button>
+			<button class="btn" onclick="display_random_image()"> Explore the Jungle </button>
+		</div>
+		<div id="facts"></div>
+		<div id="image"></div>
+	</div>
+
+	<script src="./main.js"></script>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBmVF8f9CgV5j-e3QHKrjRQ7xE9iy53SKc",
+    authDomain: "jungle-a9852.firebaseapp.com",
+    databaseURL: "https://jungle-a9852.firebaseio.com",
+    projectId: "jungle-a9852",
+    storageBucket: "jungle-a9852.appspot.com",
+    messagingSenderId: "82476413566",
+    appId: "1:82476413566:web:0e66991a60dc60d9bede2f",
+    measurementId: "G-VDEYGFMCT3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
